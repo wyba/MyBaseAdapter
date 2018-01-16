@@ -1,8 +1,10 @@
 # base-adapter-library
 
+## Usage
+
 Add it in your root build.gradle at the end of repositories:
 
-Step 1. Add the JitPack repository to your build file
+### Step 1. Add the JitPack repository to your build file
 
     allprojects {
 		repositories {
@@ -11,14 +13,13 @@ Step 1. Add the JitPack repository to your build file
 		}
 	}
 
-
-Step 2. Add the dependency
+### Step 2. Add the dependency
 
 	dependencies {
 	        compile 'com.github.wyba:base-adapter-library:V1.0.0'
 	}
 
-Step 3.Use it
+### Step 3.Use it
 
 	public class MyAdapter extends CommonAdapter<MyData>{
 

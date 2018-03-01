@@ -1,4 +1,4 @@
-package com.zhy.adapter.abslistview;
+package com.wyb.adapter.abslistview;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-import com.zhy.adapter.abslistview.base.ItemViewDelegate;
-import com.zhy.adapter.abslistview.base.ItemViewDelegateManager;
+import com.wyb.adapter.abslistview.base.ItemViewDelegate;
+import com.wyb.adapter.abslistview.base.ItemViewDelegateManager;
 
 import java.util.List;
 

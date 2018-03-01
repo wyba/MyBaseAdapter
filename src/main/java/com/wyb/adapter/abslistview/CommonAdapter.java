@@ -1,8 +1,8 @@
-package com.zhy.adapter.abslistview;
+package com.wyb.adapter.abslistview;
 
 import android.content.Context;
 
-import com.zhy.adapter.abslistview.base.ItemViewDelegate;
+import com.wyb.adapter.abslistview.base.ItemViewDelegate;
 
 import java.util.List;
 

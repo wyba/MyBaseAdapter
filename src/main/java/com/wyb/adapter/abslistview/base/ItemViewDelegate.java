@@ -1,7 +1,7 @@
-package com.zhy.adapter.abslistview.base;
+package com.wyb.adapter.abslistview.base;
 
 
-import com.zhy.adapter.abslistview.ViewHolder;
+import com.wyb.adapter.abslistview.ViewHolder;
 
 /**
  * Created by zhy on 16/6/22.

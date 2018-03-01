@@ -12,7 +12,9 @@ import com.wyb.adapter.abslistview.base.ItemViewDelegateManager;
 import java.util.List;
 
 public class MultiItemTypeAdapter<T> extends BaseAdapter {
+
     protected Context mContext;
+
     protected List<T> mDatas;
 
     private ItemViewDelegateManager mItemViewDelegateManager;

@@ -107,6 +107,21 @@ public class ViewHolder {
         return this;
     }
 
+    public ViewHolder setFormatText(int viewId, String formatText,Object... args) {
+        String result = String.format(formatText,args);
+        TextView tv = getView(viewId);
+        tv.setText(result);
+        return this;
+    }
+
+    public ViewHolder setFormatText(int viewId, int formatText,Object... args) {
+        String format = mContext.getResources().getString(formatText);
+        String result = String.format(format,args);
+        TextView tv = getView(viewId);
+        tv.setText(result);
+        return this;
+    }
+
     public ViewHolder setImageResource(int viewId, int resId) {
         ImageView view = getView(viewId);
         view.setImageResource(resId);
@@ -255,7 +270,7 @@ public class ViewHolder {
         return this;
     }
 
-    public Context getContext(){
+    public Context getContext() {
         return mContext;
     }
 

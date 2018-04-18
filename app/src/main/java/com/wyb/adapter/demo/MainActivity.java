@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         getSupportActionBar().setTitle("base-adapter");
 
         lv_menu = findViewById(R.id.lv_menu);
+
         CommonAdapter<String> commonAdapter = new CommonAdapter<String>(this, R.layout.item_menu, mDatas) {
             @Override
             protected void convert(ViewHolder viewHolder, String item, int position) {

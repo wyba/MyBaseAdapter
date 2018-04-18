@@ -9,8 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/base-adapter-listview" />
-            <option value="$PROJECT_DIR$/base-adapter-recyclerview" />
+            <option value="$PROJECT_DIR$/base-adapter-lvandgv" />
+            <option value="$PROJECT_DIR$/base-adapter-rv" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

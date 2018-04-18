@@ -2,7 +2,7 @@ package com.wyb.adapter.demo.adapter.lv;
 
 import android.content.Context;
 
-import com.wyb.lvadapter.abslistview.MultiItemTypeAdapter;
+import com.wyb.lvgvadapter.abslistview.MultiItemTypeAdapter;
 import com.wyb.adapter.demo.bean.ChatMessage;
 
 import java.util.List;

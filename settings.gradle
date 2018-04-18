@@ -1,1 +1,1 @@
-include ':app', ':base-adapter-listview', ':base-adapter-recyclerview'
+include ':app', ':base-adapter-lvandgv', ':base-adapter-rv'

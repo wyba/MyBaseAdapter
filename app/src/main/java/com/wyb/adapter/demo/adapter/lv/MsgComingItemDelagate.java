@@ -2,8 +2,8 @@ package com.wyb.adapter.demo.adapter.lv;
 
 
 import com.wyb.adapter.demo.R;
-import com.wyb.lvadapter.abslistview.ViewHolder;
-import com.wyb.lvadapter.abslistview.base.ItemViewDelegate;
+import com.wyb.lvgvadapter.abslistview.ViewHolder;
+import com.wyb.lvgvadapter.abslistview.base.ItemViewDelegate;
 
 import com.wyb.adapter.demo.bean.ChatMessage;
 

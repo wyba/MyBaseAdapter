@@ -5,7 +5,9 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -18,8 +20,8 @@ import com.wyb.rvadapter.wrapper.LoadMoreWrapper;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MultiItemRvActivity extends AppCompatActivity
-{
+public class MultiItemRvActivity extends AppCompatActivity {
+
     private RecyclerView mRecyclerView;
 
     private LoadMoreWrapper mLoadMoreWrapper;
@@ -27,11 +29,14 @@ public class MultiItemRvActivity extends AppCompatActivity
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recyclerview);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("MultiItemListView");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
 
@@ -41,17 +46,15 @@ public class MultiItemRvActivity extends AppCompatActivity
         ChatAdapterForRv adapter = new ChatAdapterForRv(this, mDatas);
 
         mLoadMoreWrapper = new LoadMoreWrapper(adapter);
+
         mLoadMoreWrapper.setLoadMoreView(LayoutInflater.from(this).inflate(R.layout.default_loading, mRecyclerView, false));
-        mLoadMoreWrapper.setOnLoadMoreListener(new LoadMoreWrapper.OnLoadMoreListener()
-        {
+
+        mLoadMoreWrapper.setOnLoadMoreListener(new LoadMoreWrapper.OnLoadMoreListener() {
             @Override
-            public void onLoadMoreRequested()
-            {
-                new Handler().postDelayed(new Runnable()
-                {
+            public void onLoadMoreRequested() {
+                new Handler().postDelayed(new Runnable() {
                     @Override
-                    public void run()
-                    {
+                    public void run() {
                         boolean coming = Math.random() > 0.5;
                         ChatMessage msg = null;
                         msg = new ChatMessage(coming ? R.drawable.renma : R.drawable.xiaohei, coming ? "人马" : "xiaohei", "where are you " + mDatas.size(),
@@ -64,23 +67,30 @@ public class MultiItemRvActivity extends AppCompatActivity
             }
         });
 
-        adapter.setOnItemClickListener(new CommonAdapter.OnItemClickListener()
-        {
+        adapter.setOnItemClickListener(new CommonAdapter.OnItemClickListener() {
             @Override
-            public void onItemClick(View view, RecyclerView.ViewHolder holder,  int position)
-            {
-                Toast.makeText(MultiItemRvActivity.this, "Click:" + position , Toast.LENGTH_SHORT).show();
+            public void onItemClick(View view, RecyclerView.ViewHolder holder, int position) {
+                Toast.makeText(MultiItemRvActivity.this, "Click:" + position, Toast.LENGTH_SHORT).show();
             }
 
             @Override
-            public boolean onItemLongClick(View view, RecyclerView.ViewHolder holder, int position)
-            {
-                Toast.makeText(MultiItemRvActivity.this, "LongClick:" + position , Toast.LENGTH_SHORT).show();
+            public boolean onItemLongClick(View view, RecyclerView.ViewHolder holder, int position) {
+                Toast.makeText(MultiItemRvActivity.this, "LongClick:" + position, Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
         mRecyclerView.setAdapter(mLoadMoreWrapper);
     }
 
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
 }

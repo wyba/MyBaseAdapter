@@ -8,6 +8,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -41,11 +42,16 @@ public class RecyclerViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recyclerview);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("MultiItemListView");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         initDatas();
 
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
 //        mRecyclerView.setHasFixedSize(true);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 //        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
@@ -132,6 +138,11 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         switch (id) {
+
+            case android.R.id.home:
+                finish();
+                break;
+
             case R.id.action_linear:
                 mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
                 break;
@@ -157,7 +168,5 @@ public class RecyclerViewActivity extends AppCompatActivity {
     @Override
     public void onStop() {
         super.onStop();
-
-
     }
 }

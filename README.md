@@ -17,7 +17,7 @@
 
 ## 1.APK
  
- [Demo DownLoad](/app/release/app-release.apk)
+ [Demo DownLoad](/app/release/app-release.apk?raw=true)
         
 ## 2.Usage
 

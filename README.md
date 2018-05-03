@@ -37,7 +37,7 @@
 listview及gridview通用adapter
 
 	dependencies {
-	        compile 'com.github.wyba:base-adapter:V1.3.0'
+	        implementation 'com.github.wyba.base-adapter:library:V1.4.0'
 	}
 	
 recyclerview通用adapter如下	

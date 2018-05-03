@@ -1,1 +1,1 @@
-include ':app', ':base-adapter-lvandgv', ':base-adapter-rv'
+include ':app', ':library', ':rv-library'

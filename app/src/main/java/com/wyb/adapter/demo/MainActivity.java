@@ -9,8 +9,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 
-import com.wyb.lvgvadapter.abslistview.CommonAdapter;
-import com.wyb.lvgvadapter.abslistview.ViewHolder;
+import com.wyb.baseadapter.abslistview.CommonAdapter;
+import com.wyb.baseadapter.abslistview.ViewHolder;
 
 
 import java.util.ArrayList;

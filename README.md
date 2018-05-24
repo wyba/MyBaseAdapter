@@ -37,13 +37,13 @@
 listview及gridview通用adapter
 
 	dependencies {
-	        implementation 'com.github.wyba.base-adapter:library:V1.4.0'
+	        implementation 'com.github.wyba.MyBaseAdapter:library:V1.5.0'
 	}
 	
 recyclerview通用adapter如下	
 
 	dependencies {
-	        implementation 'com.github.wyba.base-adapter:rv-library:V1.4.0'
+	        implementation 'com.github.wyba.MyBaseAdapter:rv-library:V1.5.0'
 	}
 
 ### Use it

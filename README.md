@@ -2,6 +2,8 @@
 
 努力打造一个ListView、GirdView通用的adapter,同时也在为RecycleView更好使用的adapter
 
+![效果图](/效果图.gif)
+
 ## 目录
 
 * [1.APK](#1apk)

@@ -9,9 +9,7 @@ import com.wyb.rvadapter.base.ViewHolder;
 
 import java.util.List;
 
-/**
- * Created by zhy on 16/4/9.
- */
+
 public abstract class CommonAdapter<T> extends MultiItemTypeAdapter<T> {
 
     protected Context mContext;
@@ -48,6 +46,5 @@ public abstract class CommonAdapter<T> extends MultiItemTypeAdapter<T> {
     }
 
     protected abstract void convert(ViewHolder holder, T t, int position);
-
 
 }

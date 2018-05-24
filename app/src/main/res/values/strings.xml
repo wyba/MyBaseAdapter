@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">base-adapter</string>
+    <string name="app_name">MyBaseAdapter</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_multi_item_list_view">MultiItemListViewActivity</string>
     <string name="title_activity_recycler_view">RecyclerViewActivity</string>

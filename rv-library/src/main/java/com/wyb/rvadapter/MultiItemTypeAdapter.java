@@ -5,16 +5,13 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 
-
 import com.wyb.rvadapter.base.ItemViewDelegate;
 import com.wyb.rvadapter.base.ItemViewDelegateManager;
 import com.wyb.rvadapter.base.ViewHolder;
 
 import java.util.List;
 
-/**
- * Created by zhy on 16/4/9.
- */
+
 public class MultiItemTypeAdapter<T> extends RecyclerView.Adapter<ViewHolder> {
 
     protected Context mContext;

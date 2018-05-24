@@ -5,7 +5,6 @@ import android.support.v4.util.SparseArrayCompat;
 import com.wyb.baseadapter.abslistview.ViewHolder;
 
 
-
 public class ItemViewDelegateManager<T> {
 
     SparseArrayCompat<ItemViewDelegate<T>> delegates = new SparseArrayCompat();

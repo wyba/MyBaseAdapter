@@ -10,9 +10,7 @@ import com.wyb.rvadapter.base.ViewHolder;
 import com.wyb.rvadapter.utils.WrapperUtils;
 
 
-/**
- * Created by zhy on 16/6/23.
- */
+
 public class HeaderAndFooterWrapper<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static final int BASE_ITEM_TYPE_HEADER = 100000;

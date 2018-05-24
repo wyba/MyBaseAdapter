@@ -9,9 +9,7 @@ import com.wyb.rvadapter.base.ViewHolder;
 import com.wyb.rvadapter.utils.WrapperUtils;
 
 
-/**
- * Created by zhy on 16/6/23.
- */
+
 public class EmptyWrapper<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     public static final int ITEM_TYPE_EMPTY = Integer.MAX_VALUE - 1;
